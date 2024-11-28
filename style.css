@@ -1,3 +1,18 @@
 .borda{
     border: solid 3px black;
+    width: 100%;
+    height: 1000px;
+}
+.cabecalho{
+    border: solid 3px red;
+    width: 100%;
+    height: 120px;
+}
+.divimgc{
+    width: 100%;
+    height: 120px;
+}
+.imgcab{
+    width: 80px;
+    height: 100%;
 }
