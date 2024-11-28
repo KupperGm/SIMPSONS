@@ -51,7 +51,7 @@
     align-items: center;
     margin: 0;
     flex-direction: column;
-    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/737/875/desktop-wallpaper-the-simpsons-the-simpsons-computer-backgrounds-simpson.jpg);
+    background-image: url(https://img.wallpapic-br.com/i3316-843-827/medium/os-simpsons-azuis-desenhos-animados-amarelos-imagem-de-fundo.jpg);
 }
 .opcoes{
     padding-top: 50px;
@@ -60,4 +60,16 @@
     font-family: "Ga Maamli", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color:  greenyellow ;
+  font-size: 30px;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.font3{
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:  greenyellow ;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
