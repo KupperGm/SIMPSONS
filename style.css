@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+*{
+    margin: 0;
+}
 .borda{
     border: solid 3px black;
     width: 100%;
     height: 1000px;
-    margin: 0;
 }
 .cabecalho{
     width: 100%;
@@ -18,4 +21,20 @@
 .imgcab{
     width: 80px;
     height: 100%;
+}
+#divcab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 120px;
+    background-image: url(https://e0.pxfuel.com/wallpapers/69/694/desktop-wallpaper-clouds-the-simpsons-figure-background-simpsons-art-cartoon-cloud.jpg);
+    border-bottom: solid 3px black;
+}
+.title{
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    border-bottom: solid 3px black;
 }
