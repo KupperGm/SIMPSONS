@@ -74,52 +74,62 @@
     -webkit-text-stroke-color: black;
 }
 @media (max-width: 768px) {
-    .title {
-        font-size: 28px; 
-    }
-
     .divimgc {
-        flex-direction: column; 
-        height: auto; 
-        padding: 10px; 
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
     }
 
     .imgcab {
-        width: 60px; 
+        width: 60px;
     }
 
     #divcab {
-        height: 100px; 
+        height: 100px;
+    }
+
+    .title {
+        font-size: 30px;
     }
 
     .font2, .font3 {
-        font-size: 24px; 
+        font-size: 24px;
     }
 
     .perguntas {
-        padding: 10px; 
+        padding: 10px;
     }
 
     .opcoes {
-        padding-top: 30px; 
+        padding: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .title {
-        font-size: 22px; 
+    .divimgc {
+        height: auto;
+        padding: 5px;
+        text-align: center;
     }
 
     .imgcab {
-        width: 50px; 
+        width: 50px;
+    }
+
+    .title {
+        font-size: 22px;
     }
 
     .font2, .font3 {
-        font-size: 20px; 
+        font-size: 18px;
     }
 
     .perguntas {
-        text-align: center; 
-        padding: 5px; 
+        text-align: center;
+        padding: 5px;
+    }
+
+    .opcoes {
+        padding-top: 10px;
     }
 }
