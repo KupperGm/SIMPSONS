@@ -73,3 +73,53 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
+@media (max-width: 768px) {
+    .title {
+        font-size: 28px; 
+    }
+
+    .divimgc {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px; 
+    }
+
+    .imgcab {
+        width: 60px; 
+    }
+
+    #divcab {
+        height: 100px; 
+    }
+
+    .font2, .font3 {
+        font-size: 24px; 
+    }
+
+    .perguntas {
+        padding: 10px; 
+    }
+
+    .opcoes {
+        padding-top: 30px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 22px; 
+    }
+
+    .imgcab {
+        width: 50px; 
+    }
+
+    .font2, .font3 {
+        font-size: 20px; 
+    }
+
+    .perguntas {
+        text-align: center; 
+        padding: 5px; 
+    }
+}
