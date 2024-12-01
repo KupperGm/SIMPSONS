@@ -76,40 +76,7 @@
 @media (max-width: 768px) {
     .divimgc {
         flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    .imgcab {
-        width: 60px;
-    }
-
-    #divcab {
-        height: 100px;
-    }
-
-    .title {
-        font-size: 30px;
-    }
-
-    .font2, .font3 {
-        font-size: 24px;
-    }
-
-    .perguntas {
-        padding: 10px;
-    }
-
-    .opcoes {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .divimgc {
-        height: auto;
-        padding: 5px;
-        text-align: center;
+        padding: 20px;
     }
 
     .imgcab {
@@ -117,19 +84,41 @@
     }
 
     .title {
-        font-size: 22px;
+        font-size: 1.2em;
     }
 
     .font2, .font3 {
-        font-size: 18px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .divimgc {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .perguntas {
-        text-align: center;
+    .imgcab {
+        width: 40px;
+    }
+
+    .title {
+        font-size: 1em;
         padding: 5px;
     }
 
+    .perguntas {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .font2, .font3 {
+        font-size: 0.9em;
+    }
+
     .opcoes {
-        padding-top: 10px;
+        padding: 10px;
+        margin-top: 10px;
     }
 }
