@@ -57,12 +57,11 @@
     padding-top: 50px;
 }
 .font2{
-    font-family: "Ga Maamli", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color:  greenyellow ;
-  font-size: 30px;
-  -webkit-text-stroke-width: 0.6px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:  greenyellow ;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
 .font3{
