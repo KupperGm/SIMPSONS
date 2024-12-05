@@ -94,7 +94,8 @@ button{
     }
 
     .font2, .font3 {
-        font-size: 1em;
+        font-size: 2em;
+        -webkit-text-stroke-width: 0.5px;
     }
 }
 
