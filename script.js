@@ -36,7 +36,7 @@ function testar() {
     
     function calcularPersonagem() {
         let resultado = `Homer = ${contHomer} <br> Margie = ${contMargie} <br> Bart = ${contBart} <br> Lisa = ${contLisa}`;
-        document.getElementById("resultado").innerHTML = "Contabilizando resultados, aguarde 5 segundos!";
+        document.getElementById("resultado").textContent = "Contabilizando resultados, aguarde 5 segundos!";
 
         console.log(resultado);
 
