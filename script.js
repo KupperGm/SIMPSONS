@@ -24,4 +24,29 @@ function testar(){
             }
         }
     })
+    let resultado = `Homer = ${contHomer} <br> Margie =${contMargie} <br> Bart = ${contBart} <br> Lisa = ${contLisa}`;
+    
+    document.getElementById("resultado").innerHTML = "Surpresa";
+
+    localStorage.setItem('homer', contHomer)
+    localStorage.setItem('margie', contMargie)
+    localStorage.setItem('lisa',contLisa)
+    localStorage.setItem('bart',contBart)
+           
+    let maior =0
+    let pagina 
+
+    if(contBart > contHomer && contBart > contLisa && contBart> contMargie){
+        pagina = 'bart'
+    }
+
+
+
+
+
+
+        setTimeout(()=>{
+                window.open(pagina+'.html')
+        },5000 )
 }
+       
