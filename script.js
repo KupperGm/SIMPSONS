@@ -26,7 +26,9 @@ function testar(){
     })
     let resultado = `Homer = ${contHomer} <br> Margie =${contMargie} <br> Bart = ${contBart} <br> Lisa = ${contLisa}`;
     
-    document.getElementById("resultado").innerHTML = "Surpresa";
+    document.getElementById("resultado").innerHTML = "Contabilizando resultados, aguarde 5 segundos!";
+    
+    console.log(resultado)
 
     localStorage.setItem('homer', contHomer)
     localStorage.setItem('margie', contMargie)
