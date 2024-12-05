@@ -3,16 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VISHH</title>
+    <title>VISHHH</title>
     <style>
-
-        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .resultado {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .personagem {
+            font-size: 20px;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .barra-progresso {
+            width: 100%;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        .progresso {
+            height: 100%;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            border-radius: 10px;
+        }
+        .imagem-personagem {
+            width: 150px;
+            height: 150px;
+            margin: 20px 0;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .descricao {
+            font-size: 16px;
+            margin-top: 20px;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 <body>
-    
 
+    <div class="container">
+        <h1>Resultado - Homer</h1>
 
+       
+        <img src="https://www.pngarts.com/files/11/Homer-Simpson-PNG-High-Quality-Image.png" alt="Homer Simpson" class="imagem-personagem">
+
+        <div id="resultado" class="resultado">
+            <div class="personagem" id="homer">
+                <p>Homer: <span id="homer-percentual">0%</span></p>
+            </div>
+        </div>
+
+        <p class="descricao">Você é o Homer Simpson! <br>
+        Aparentemente, você se identificou mais com o personagem do pai da família, conhecido pelo seu jeito irreverente e sua personalidade descomplicada. Homer é famoso por seus momentos engraçados e muitas vezes desastrosos, mas sempre com boa intenção. Se você também é aquele tipo de pessoa que se diverte com a vida e sempre coloca sua família em primeiro lugar, você com certeza é o Homer!</p>
+    </div>
+
+    <script>
+        let contHomer = parseInt(localStorage.getItem('homer') || 0);
+        let contMargie = parseInt(localStorage.getItem('margie') || 0);
+        let contBart = parseInt(localStorage.getItem('bart') || 0);
+        let contLisa = parseInt(localStorage.getItem('lisa') || 0);
+
+        let totalVotos = contHomer + contMargie + contBart + contLisa;
+
+        function atualizarResultados() {
+            if (totalVotos === 0) {
+                alert("Nenhum voto registrado!");
+                return;
+            }
+
+            let homerPercentual = (contHomer / totalVotos) * 100;
+
+            document.getElementById('homer-percentual').textContent = homerPercentual.toFixed(2) + '%';
+            document.getElementById('homer-bar').style.width = homerPercentual.toFixed(2) + '%';
+        }
+
+        atualizarResultados();
+    </script>
 
 </body>
 </html>
