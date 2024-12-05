@@ -33,11 +33,28 @@ function testar(){
     localStorage.setItem('lisa',contLisa)
     localStorage.setItem('bart',contBart)
            
-    let maior =0
     let pagina 
 
-    if(contBart > contHomer && contBart > contLisa && contBart> contMargie){
+    if(contBart == contHomer || contBart == contLisa || contBart> contMargie){
+        pagina = 'barbie'
+    }
+    else if (contHomer == contLisa || contHomer == contMargie) {
+        pagina = 'barbie'
+    }
+    else if (contLisa == contMargie){
+            pagina = 'barbie'
+    }
+    else if(contBart > contHomer && contBart > contLisa && contBart> contMargie){
         pagina = 'bart'
+    }
+    else if (contHomer > contBart && contHomer > contLisa && contHomer > contMargie) {
+        pagina = 'homer'
+    }
+    else if (contLisa > contBart && contLisa > contHomer && contLisa> contMargie){
+            pagina = 'lisa'
+    }
+    else {
+        pagina = 'margie'
     }
 
 
