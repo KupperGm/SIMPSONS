@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 *{
     margin: 0;
 }
@@ -66,7 +66,7 @@
     -webkit-text-stroke-color: black;
 }
 .font3{
-    font-family: "Ga Maamli", sans-serif;
+    font-family: "Anton SC", sans-serif;
     font-weight: 400;
     font-style: normal;
     color:  greenyellow ;
