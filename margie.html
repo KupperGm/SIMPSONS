@@ -4,8 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VISHH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f2f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border: 2px solid #32cd32;
+        }
+        h1 {
+            color: #32cd32;
+            font-size: 32px;
+        }
+        .resultado {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .personagem {
+            font-size: 20px;
+            margin: 10px 0;
+            padding: 20px;
+            background-color: #98fb98;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .barra-progresso {
+            width: 100%;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        .progresso {
+            height: 100%;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            border-radius: 10px;
+        }
+        .imagem-personagem {
+            width: 200px;
+            height: 200px;
+            margin: 20px 0;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #32cd32;
+        }
+        .descricao {
+            font-size: 16px;
+            margin-top: 20px;
+            color: #333;
+            background-color: #98fb98;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="container">
+        <h1>Resultado - Margie</h1>
+
+
+        <img src="https://e7.pngegg.com/pngimages/976/872/png-clipart-the-simpson-marge-illustration-marge-simpson-at-the-movies-cartoons.png" alt="Margie Simpson" class="imagem-personagem">
+
+        <div id="resultado" class="resultado">
+            <div class="personagem" id="margie">
+                <p>Margie: <span id="margie-percentual">0%</span></p>
+            </div>
+        </div>
+
+        <p class="descricao">Você é a Margie Simpson! <br>
+        A Margie representa a paciência e o amor incondicional pela família. Sempre cuidando de todos ao seu redor, Margie é a figura materna forte e segura. Se você é alguém que valoriza a harmonia familiar e sempre procura o melhor para todos, você é a Margie! Cuidadosa, protetora e cheia de sabedoria.</p>
+    </div>
+
+    <script>
+        let contMargie = parseInt(localStorage.getItem('margie') || 0);
+        let contHomer = parseInt(localStorage.getItem('homer') || 0);
+        let contBart = parseInt(localStorage.getItem('bart') || 0);
+        let contLisa = parseInt(localStorage.getItem('lisa') || 0);
+
+        let totalVotos = contMargie + contHomer + contBart + contLisa;
+
+        function atualizarResultados() {
+            if (totalVotos === 0) {
+                alert("Nenhum voto registrado!");
+                return;
+            }
+
+            let margiePercentual = (contMargie / totalVotos) * 100;
+
+            document.getElementById('margie-percentual').textContent = margiePercentual.toFixed(2) + '%';
+            document.getElementById('margie-bar').style.width = margiePercentual.toFixed(2) + '%';
+        }
+
+        atualizarResultados();
+    </script>
+
 </body>
 </html>
